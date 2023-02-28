@@ -11,7 +11,7 @@ sudo apt-get upgrade
 sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
 ```
 
-Step 2: Import the public key
+Step 2: Import MongoDB GPG Key
 
 ```bash
 sudo wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
@@ -23,10 +23,10 @@ Step 3: Configure MongoDB Repo
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
 ```
 
-## installation for ubuntu 22.04
+## Installation for ubuntu 22.04
 
 ```bash
-sudo apt update
+sudo apt-get update
 sudo apt install mongodb-org
 ```
 
